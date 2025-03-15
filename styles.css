@@ -124,68 +124,101 @@ nav ul li a {
     font-size: 1.1rem;
 }
 
-/* About Section */
-.about {
+/* Our Team Section */
+.team {
     background-color: #34495e;
     color: white;
     padding: 60px 0;
     text-align: center;
 }
 
-.about h2 {
+.team h2 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-.about p {
+.team .team-members {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.team .team-member {
+    background-color: #ecf0f1;
+    color: #333;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.team .team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team .team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.team .team-member p {
     font-size: 1.1rem;
 }
 
-/* Contact Section */
-.contact {
+/* Careers Section */
+.careers {
     background-color: #ecf0f1;
     padding: 60px 0;
 }
 
-.contact h2 {
+.careers h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-form {
+.careers .job-listings {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-form input,
-form textarea {
+.careers .job-listing {
+    background-color: white;
+    padding: 30px;
     width: 60%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    font-size: 1rem;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-form textarea {
-    height: 150px;
-    resize: none;
+.careers .job-listing h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
 }
 
-form button {
-    padding: 15px 30px;
+.careers .job-listing p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.careers .job-listing a {
     background-color: #3498db;
     color: white;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
-    border: none;
     border-radius: 5px;
-    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-form button:hover {
+.careers .job-listing a:hover {
     background-color: #2980b9;
 }
 
