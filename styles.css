@@ -1,4 +1,4 @@
-/* Resetting default styles */
+/* Global styles */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
     color: #333;
 }
 
-/* Header styles */
+/* Header styles (visible on all pages) */
 header {
     background-color: #2c3e50;
     color: #fff;
@@ -88,130 +88,55 @@ nav ul li a {
     background-color: #2980b9;
 }
 
-/* Add the technology image under hero */
-.hero-image {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
-
 /* Services Section */
 .services {
     background-color: #ecf0f1;
-    padding: 60px 0;
+    padding: 50px 0;
+    text-align: center;
 }
 
 .services h2 {
-    text-align: center;
-    font-size: 2.5rem;
     margin-bottom: 30px;
+    font-size: 2rem;
 }
 
 .service-cards {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 30px;
 }
 
 .service-card {
     background-color: white;
-    padding: 30px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
 }
 
 .service-card h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
 }
 
 .service-card p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #555;
 }
 
-/* Team Section */
-.team {
-    padding: 60px 0;
-    background-color: #fff;
-}
-
-.team h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.team-members {
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-}
-
-.team-member {
-    text-align: center;
-    width: 30%;
-}
-
-.team-member img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    border: 3px solid #3498db;
-    margin-bottom: 20px;
-}
-
-.team-member h3 {
-    font-size: 1.6rem;
-    margin-bottom: 10px;
-}
-
-.team-member p {
-    font-size: 1.1rem;
-    color: #555;
-}
-
-/* Careers Section */
-.careers {
-    padding: 60px 0;
-    background-color: #ecf0f1;
-}
-
-.job-listings {
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-}
-
-.job-listing {
-    background-color: white;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 30%;
-}
-
-.job-listing h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-.job-listing p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-}
-
+/* Footer */
 footer {
     background-color: #2c3e50;
     color: #fff;
-    text-align: center;
     padding: 20px 0;
+    text-align: center;
 }
 
-/* Smooth Scroll Styling */
-html {
-    scroll-behavior: smooth;
+footer p {
+    font-size: 1rem;
 }
