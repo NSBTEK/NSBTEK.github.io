@@ -5,132 +5,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NSBTEK - IT Consulting, Staffing & Recruiting</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // Smooth Scroll for all navigation links
+        $(document).ready(function(){
+            $("a[href^='#']").on('click', function(e) {
+                e.preventDefault();
+                var target = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top - 50
+                }, 800);
+            });
+        });
+    </script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="logo">NSBTEK</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#team">Our Team</a></li>
-                    <li><a href="#careers">Careers</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Your Partner in IT Consulting, Staffing, and Technology Solutions</h2>
-            <p>Delivering innovative technology solutions and top-tier talent for your business growth.</p>
-            <a href="#contact" class="cta-btn">Get in Touch</a>
-        </div>
-    </section>
+<header>
+    <div class="container">
+        <h1 class="logo">NSBTEK</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-cards">
-                <div class="service-card">
-                    <h3>IT Consulting</h3>
-                    <p>Strategic guidance to optimize your IT infrastructure and drive digital transformation.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Staffing & Recruiting</h3>
-                    <p>Connecting businesses with top IT talent to help meet project goals and deadlines.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Technology Solutions</h3>
-                    <p>Building intelligent systems that enhance decision-making and drive innovation.</p>
-                </div>
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h2>Your Partner in IT Consulting, Staffing, and AI Solutions</h2>
+        <p>Delivering innovative technology solutions and top-tier talent for your business growth.</p>
+        <a href="#contact" class="cta-btn">Get in Touch</a>
+    </div>
+</section>
+
+<section id="services" class="services">
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>IT Consulting</h3>
+                <p>Strategic guidance to optimize your IT infrastructure and drive digital transformation.</p>
+            </div>
+            <div class="service-card">
+                <h3>Staffing & Recruiting</h3>
+                <p>Connecting businesses with top IT talent to help meet project goals and deadlines.</p>
+            </div>
+            <div class="service-card">
+                <h3>AI & ML Solutions</h3>
+                <p>Building intelligent systems that enhance decision-making and drive innovation.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>NSBTEK is a leading provider of IT consulting, staffing, and innovative Technology solutions. We bridge the gap between businesses and the cutting-edge technologies that shape the future.</p>
-        </div>
-    </section>
+<section id="about" class="about">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>NSBTEK is a leading provider of IT consulting, staffing, and innovative AI & ML solutions. We bridge the gap between businesses and the cutting-edge technologies that shape the future.</p>
+    </div>
+</section>
 
-    <!-- New Section: Our Team -->
-    <section id="team" class="team">
-        <div class="container">
-            <h2>Our Team</h2>
-            <p>At NSBTEK, we pride ourselves on having a team of highly skilled professionals, experts in IT consulting, staffing, and Technology solutions. Our collaborative approach ensures that we stay ahead in the tech world.</p>
-            <div class="team-members">
-                <div class="team-member">
-                    <img src="team1.jpg" alt="Team Member 1">
-                    <h3>Naveen</h3>
-                    <p>CEO & Founder</p>
-                    <p>Naveen is a visionary leader with over 12 years of experience in the tech industry. His expertise drives the strategic direction of NSBTEK.</p>
-                </div>
-                <div class="team-member">
-                    <img src="team2.jpg" alt="Team Member 2">
-                    <h3>Babitha</h3>
-                    <p>Lead AI Engineer</p>
-                    <p>Babitha is a leading expert in Artificial Intelligence, spearheading innovative AI projects that transform businesses.</p>
-                </div>
-                <div class="team-member">
-                    <img src="team3.jpg" alt="Team Member 3">
-                    <h3>Shilpa</h3>
-                    <p>Head of IT Consulting</p>
-                    <p>Shilpa leads our IT consulting division, helping businesses optimize their IT infrastructure for growth and success.</p>
-                </div>
+<section id="team" class="team">
+    <div class="container">
+        <h2>Our Team</h2>
+        <p>At NSBTEK, we pride ourselves on having a team of highly skilled professionals, experts in IT consulting, staffing, AI, and ML solutions. Our collaborative approach ensures that we stay ahead in the tech world.</p>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="team1.jpg" alt="John Doe">
+                <h3>John Doe</h3>
+                <p>CEO & Founder</p>
+                <p>John is a visionary leader with over 20 years of experience in the tech industry. His expertise drives the strategic direction of NSBTEK.</p>
+            </div>
+            <div class="team-member">
+                <img src="team2.jpg" alt="Jane Smith">
+                <h3>Jane Smith</h3>
+                <p>Lead AI Engineer</p>
+                <p>Jane is a leading expert in Artificial Intelligence, spearheading innovative AI projects that transform businesses.</p>
+            </div>
+            <div class="team-member">
+                <img src="team3.jpg" alt="David Lee">
+                <h3>David Lee</h3>
+                <p>Head of IT Consulting</p>
+                <p>David leads our IT consulting division, helping businesses optimize their IT infrastructure for growth and success.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- New Section: Careers -->
-    <section id="careers" class="careers">
-        <div class="container">
-            <h2>Careers</h2>
-            <p>Join our team and be a part of NSBTEK’s exciting journey. We are always looking for talented individuals who are passionate about technology, innovation, and growth. Check out our open positions:</p>
-            <div class="job-listings">
-                <div class="job-listing">
-                    <h3>AI & ML Specialist</h3>
-                    <p>Location: Remote | Full-time</p>
-                    <p>We are looking for an AI & ML Specialist to work on cutting-edge machine learning projects that drive innovation.</p>
-                    <a href="mailto:hr@nsbtek.com" class="cta-btn">Apply Now</a>
-                </div>
-                <div class="job-listing">
-                    <h3>Senior IT Consultant</h3>
-                    <p>Location: New York | Full-time</p>
-                    <p>Join our consulting team and help clients implement efficient IT solutions that drive their business forward.</p>
-                    <a href="mailto:hr@nsbtek.com" class="cta-btn">Apply Now</a>
-                </div>
-                <div class="job-listing">
-                    <h3>Software Developer</h3>
-                    <p>Location: Remote | Full-time</p>
-                    <p>We are seeking a Software Developer to contribute to developing our innovative software solutions.</p>
-                    <a href="mailto:hr@nsbtek.com" class="cta-btn">Apply Now</a>
-                </div>
+<section id="careers" class="careers">
+    <div class="container">
+        <h2>Careers</h2>
+        <p>Join our team and be a part of NSBTEK’s exciting journey. We are always looking for talented individuals who are passionate about technology, innovation, and growth. Check out our open positions:</p>
+        <div class="job-listings">
+            <div class="job-listing">
+                <h3>AI & ML Specialist</h3>
+                <p>Location: Remote | Full-time</p>
+                <p>We are looking for an AI & ML Specialist to work on cutting-edge machine learning projects that drive innovation.</p>
+                <a href="mailto:careers@nsbtek.com" class="cta-btn">Apply Now</a>
+            </div>
+            <div class="job-listing">
+                <h3>Senior IT Consultant</h3>
+                <p>Location: New York | Full-time</p>
+                <p>Join our consulting team and help clients implement efficient IT solutions that drive their business forward.</p>
+                <a href="mailto:careers@nsbtek.com" class="cta-btn">Apply Now</a>
+            </div>
+            <div class="job-listing">
+                <h3>Software Developer</h3>
+                <p>Location: Remote | Full-time</p>
+                <p>We are seeking a Software Developer to contribute to developing our innovative software solutions.</p>
+                <a href="mailto:careers@nsbtek.com" class="cta-btn">Apply Now</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form action="#" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="cta-btn">Send Message</button>
-            </form>
-        </div>
-    </section>
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="cta-btn">Send Message</button>
+        </form>
+    </div>
+</section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 NSBTEK. All Rights Reserved.</p>
-        </div>
-    </footer>
+<footer>
+    <div class="container">
+        <p>&copy; 2025 NSBTEK. All Rights Reserved.</p>
+    </div>
+</footer>
+
 </body>
 </html>
