@@ -9,8 +9,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    color: #fff;
+    background-color: #121212; /* Black background */
 }
 
 .container {
@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    background: #333;
+    background: #0A74DA; /* Light blue */
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -29,7 +29,7 @@ header {
 nav ul {
     list-style: none;
     text-align: center;
-    background: #444;
+    background: #333;
     padding: 10px 0;
 }
 
@@ -46,13 +46,14 @@ nav ul li a {
 
 section {
     padding: 40px 0;
+    background-color: #1A1A1A;
 }
 
 h2, h3 {
-    color: #333;
+    color: #0A74DA; /* Light blue */
 }
 
-#about p {
+#about p, #services p, #team p, #careers p {
     font-size: 18px;
     line-height: 1.8;
 }
@@ -62,7 +63,15 @@ h2, h3 {
 }
 
 #services h3 {
-    color: #0056b3;
+    color: #0A74DA; /* Light blue */
+}
+
+#team .team-member {
+    margin-bottom: 20px;
+}
+
+#team h3 {
+    color: #fff;
 }
 
 .contact-details p {
@@ -70,9 +79,9 @@ h2, h3 {
 }
 
 form {
-    background-color: #fff;
+    background-color: #333;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #444;
     border-radius: 5px;
 }
 
@@ -86,12 +95,12 @@ form input, form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #555;
     border-radius: 4px;
 }
 
 form button {
-    background-color: #333;
+    background-color: #0A74DA; /* Light blue */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -99,11 +108,11 @@ form button {
 }
 
 form button:hover {
-    background-color: #555;
+    background-color: #0056b3;
 }
 
 footer {
-    background: #333;
+    background: #0A74DA; /* Light blue */
     color: #fff;
     text-align: center;
     padding: 10px 0;
